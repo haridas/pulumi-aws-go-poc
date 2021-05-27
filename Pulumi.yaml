@@ -1,0 +1,3 @@
+name: aws-go-poc
+runtime: go
+description: A minimal AWS Go Pulumi program
