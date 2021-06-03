@@ -1,3 +1,10 @@
 encryptionsalt: v1:5v1pqxte7vU=:v1:1eb/dbUBpAu3ajRD:cPSZd/HmJ92VLFE2xHNhuxlCDOhFWg==
 config:
-  deploy:region: "us-west-1"
+  aws:region: "us-east-1"
+
+  aws-go-poc:deploy:
+    region: "us-west-1"
+  aws-go-poc:us-west-1:
+    infra:
+      cpu: 2
+      ram: 2048
