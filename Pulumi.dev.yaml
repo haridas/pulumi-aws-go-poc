@@ -2,9 +2,19 @@ encryptionsalt: v1:5v1pqxte7vU=:v1:1eb/dbUBpAu3ajRD:cPSZd/HmJ92VLFE2xHNhuxlCDOhF
 config:
   aws:region: "us-east-1"
 
+  # Project specific namespace OR Default namespace.
   aws-go-poc:deploy:
     region: "us-west-1"
+
   aws-go-poc:us-west-1:
+    names:
+      - a
+      - b
     infra:
       cpu: 2
       ram: 2048
+
+  # Region specific namespace
+  us-west-1:infra:
+    cpu: 2
+    ram: 2048
